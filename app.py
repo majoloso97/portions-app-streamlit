@@ -24,7 +24,7 @@ class App:
     
     def build_ui(self):
         st.header('Calculadora de porciones')
-        st.wtrite('Esta calculadora permite convertir entre porciones equivalentes de distintos alimentos.')
+        st.write('Esta calculadora permite convertir entre porciones equivalentes de distintos alimentos.')
         with st.form('input_form'):
             food = st.selectbox('Selecione el alimento a convertir:', self.portions_data.Alimento)
             value = st.number_input('Digite la cantidad de su porción', 0.0, 1000.0)
